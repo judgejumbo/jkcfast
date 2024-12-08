@@ -3,7 +3,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <button className="btn">Get started Now in 2025</button>
+      <h1>Collect Customer Feedback To Build Better Products</h1>
+
+      <div>
+        Create a feedback board in minutes. This lets you prioritze developent
+        to build products CUSTOMERS will love
+      </div>
     </main>
   );
 }
