@@ -1,6 +1,9 @@
 import Bnlogin from "@/components/ButtonLogin_1";
 
 export default function Home() {
+  const isLoggedIn = true;
+  const name = "Judge Jumbo";
+
   return (
     <main>
       <section className="p-8 text-center py-32 max-w-3xl mx-auto">
@@ -13,8 +16,7 @@ export default function Home() {
           Create a feedback board in minutes. This lets you prioritze developent
           to build products CUSTOMERS will love
         </div>
-
-        <Bnlogin></Bnlogin>
+        <Bnlogin isLoggedIn={isLoggedIn} name={name}></Bnlogin>
       </section>
     </main>
   );
