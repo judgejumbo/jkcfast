@@ -6,6 +6,19 @@ export default function Home() {
 
   return (
     <main>
+      <section className="bg-gray-200">
+        <div className="max-w-3xl mx-auto flex justify-between items-center px-8 py-2">
+          {" "}
+          <div className="font-bold"> JJP CodeFast</div>
+          <div className="space-x-4">
+            <a>Pricing</a>
+            <a>FAQ</a>
+          </div>
+          <div>
+            <Bnlogin isLoggedIn={isLoggedIn} name={name} />
+          </div>
+        </div>
+      </section>
       <section className="p-8 text-center py-32 max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-6">
           {" "}
