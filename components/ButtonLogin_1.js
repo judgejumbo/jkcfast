@@ -4,10 +4,13 @@ import Link from "next/link";
 
 // destructing the isLoggedIn
 
-const Bnlogin = ({ isLoggedIn, name }) => {
+const Bnlogin = ({ isLoggedIn, name, extraStyle }) => {
   if (isLoggedIn) {
     return (
-      <Link href="/dashboard " className="btn btn-primary">
+      <Link
+        href="/dashboard "
+        className={`btn btn-primary ${extraStyle ? extraStyle : ""}`}
+      >
         {" "}
         Welcome Back {name}
       </Link>
