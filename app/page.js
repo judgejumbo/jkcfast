@@ -1,4 +1,5 @@
 import Bnlogin from "@/components/ButtonLogin_1";
+import FAQListItem from "@/components/FAQListItem";
 
 export default function Home() {
   const isLoggedIn = true;
@@ -49,7 +50,7 @@ export default function Home() {
           <h2 className="text-3xl lg:text-3xl font-extrabold mb-12 text-center">
             A pricing that adapts to your needs
           </h2>
-          {/* card */}
+          {/* card within pricing*/}
           <div className="p-8 bg-base-100 w-96 rounded-3xl mx-auto space-y-6">
             <div className="flex gap-2 items-baseline">
               <div className="text-4xl font-black"> $19</div>
@@ -82,6 +83,27 @@ export default function Home() {
             </ul>
             <Bnlogin isLoggedIn={isLoggedIn} name={name} extraStyle="w-full" />
           </div>
+        </div>
+      </section>
+      {/* FAQ */}
+      <section className="bg-gray-200">
+        <div className="p-8 py-32 max-w-3xl mx-auto">
+          <p className="text-sm uppercase font-medium text-center text-primary">
+            FAQ
+          </p>
+          <h2 className="text-3xl lg:text-3xl font-extrabold mb-12 text-center">
+            Frequently Asked Questions
+          </h2>
+
+          <ul className="max-w-md mx-auto">
+            {[
+              { question: "What do I get exactly", answer: "Loreum ipseum" },
+              { question: "What do I get exactly2", answer: "Loreum ipseum2" },
+              { question: "What do I get exactly3", answer: "Loreum ipseum3" },
+            ].map((qa) => (
+              <FAQListItem key={qa.question} qa={qa} />
+            ))}
+          </ul>
         </div>
       </section>
     </main>
