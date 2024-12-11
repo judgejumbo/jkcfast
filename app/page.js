@@ -20,8 +20,12 @@ export default function Home() {
           {" "}
           <div className="font-bold"> JJP CodeFast</div>
           <div className="space-x-4 hidden md:block">
-            <a>Pricing</a>
-            <a>FAQ</a>
+            <a classname="link link-hover" href="#pricing">
+              Pricing
+            </a>
+            <a classname="link link-hover" href="#faq">
+              FAQ
+            </a>
           </div>
           <div>
             <Bnlogin isLoggedIn={isLoggedIn} name={name} />
@@ -42,7 +46,7 @@ export default function Home() {
         <Bnlogin isLoggedIn={isLoggedIn} name={name}></Bnlogin>
       </section>
       {/* Pricing */}
-      <section className="bg-gray-200">
+      <section className="bg-gray-200" id="pricing">
         <div className="p-8 py-32 max-w-3xl mx-auto">
           <p className="text-sm uppercase font-medium text-center text-primary">
             Pricing
@@ -86,7 +90,7 @@ export default function Home() {
         </div>
       </section>
       {/* FAQ */}
-      <section className="bg-gray-200">
+      <section className="bg-gray-200" id="faq">
         <div className="p-8 py-32 max-w-3xl mx-auto">
           <p className="text-sm uppercase font-medium text-center text-primary">
             FAQ
