@@ -111,9 +111,20 @@ export default function Home() {
 
           <ul className="max-w-md mx-auto">
             {[
-              { question: "What do I get exactly", answer: "Loreum ipseum" },
-              { question: "What do I get exactly2", answer: "Loreum ipseum2" },
-              { question: "What do I get exactly3", answer: "Loreum ipseum3" },
+              {
+                question: "What do I get exactly with this new app",
+                answer: "Loreum ipseum Judge jumbo Rocks",
+              },
+              {
+                question: "What do I get exactly2 can I pay for a trial",
+                answer: "Loreum ipseum2",
+              },
+              {
+                question:
+                  "What do I get exactly3 - how many users do you really have",
+                answer:
+                  "Loreum ipseum3- we have around 2 million users so there",
+              },
             ].map((qa) => (
               <FAQListItem key={qa.question} qa={qa} />
             ))}
