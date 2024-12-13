@@ -95,7 +95,11 @@ export default function Home() {
                 );
               })}
             </ul>
-            <Bnlogin isLoggedIn={isLoggedIn} name={name} extraStyle="w-full" />
+            <Bnlogin
+              isLoggedIn={isLoggedIn}
+              name={name}
+              extraStyle="lg:w-full"
+            />
           </div>
         </div>
       </section>
