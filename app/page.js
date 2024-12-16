@@ -65,7 +65,7 @@ export default function Home() {
             A pricing that adapts to your needs
           </h2>
           {/* card within pricing*/}
-          <div className="p-8 bg-base-100 w-96 rounded-3xl mx-auto space-y-6">
+          <div className=" sm:w-3/4 p-8 bg-base-100 rounded-2xl mx-auto space-y-6">
             <div className="flex gap-2 items-baseline">
               <div className="text-4xl font-black"> $19</div>
               <div className="uppercase text-sm font-medium opacity-50">
