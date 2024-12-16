@@ -22,10 +22,10 @@ export default function Home() {
           {" "}
           <div className="font-bold"> JJP CodeFast</div>
           <div className="space-x-4 hidden md:block">
-            <a classname="link link-hover" href="#pricing">
+            <a className="link link-hover" href="#pricing">
               Pricing
             </a>
-            <a classname="link link-hover" href="#faq">
+            <a className="link link-hover" href="#faq">
               FAQ
             </a>
           </div>
