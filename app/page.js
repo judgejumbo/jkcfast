@@ -11,7 +11,7 @@ export default function Home() {
     "Collect Customer Feedback",
     "Unlimited Boards",
     "Admin Dashborad",
-    "24/7/ Support",
+    "24/7 Support",
   ];
 
   return (
@@ -121,7 +121,7 @@ export default function Home() {
               },
               {
                 question: "What do I get exactly2 can I pay for a trial",
-                answer: "Loreum ipseum2",
+                answer: "Loreum ipseum t exactly2 can I pay for a tria2",
               },
               {
                 question:
