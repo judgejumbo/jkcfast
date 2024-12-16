@@ -2,10 +2,14 @@ import Bnlogin from "@/components/ButtonLogin_1";
 import FAQListItem from "@/components/FAQListItem";
 import Image from "next/image";
 import productDemo from "./productDemo.jpeg";
+import { auth } from "@/auth";
 
-export default function Home() {
-  const isLoggedIn = true;
-  const name = "Judge Jumbo";
+export default async function Home() {
+  // const isLoggedIn = true;
+  // const name = "Judge F Jumbo";
+
+  const session = await auth();
+  console.log(session);
 
   const pricingFeaturesList = [
     "Collect Customer Feedback",
@@ -30,7 +34,7 @@ export default function Home() {
             </a>
           </div>
           <div>
-            <Bnlogin isLoggedIn={isLoggedIn} name={name} />
+            <Bnlogin session={session} />
           </div>
         </div>
       </section>
@@ -52,7 +56,7 @@ export default function Home() {
             Create a feedback board in minutes. This lets you prioritze
             developent to build products CUSTOMERS will love
           </div>
-          <Bnlogin isLoggedIn={isLoggedIn} name={name}></Bnlogin>
+          <Bnlogin session={session}> </Bnlogin>
         </div>
       </section>
       {/* Pricing */}
@@ -95,11 +99,7 @@ export default function Home() {
                 );
               })}
             </ul>
-            <Bnlogin
-              isLoggedIn={isLoggedIn}
-              name={name}
-              extraStyle="lg:w-full"
-            />
+            <Bnlogin session={session} extraStyle="lg:w-full" />
           </div>
         </div>
       </section>
