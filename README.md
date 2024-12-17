@@ -1,3 +1,7 @@
+Created a layout.js for the dashboard
+
+Note: It was fixed by putting the Auth Id into the variable from the env.local.
+
 Note - after the Session Lesson - it appeared that judgejumbo.com is down!
 
 This is Live To JudgeJumbo.com
