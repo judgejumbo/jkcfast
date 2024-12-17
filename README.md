@@ -1,3 +1,5 @@
+Note - after the Session Lesson - it appeared that judgejumbo.com is down!
+
 This is Live To JudgeJumbo.com
 
 This has been cloned and reset to a hash point

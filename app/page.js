@@ -9,13 +9,12 @@ export default async function Home() {
   // const name = "Judge F Jumbo";
 
   const session = await auth();
-  console.log(session);
 
   const pricingFeaturesList = [
     "Collect Customer Feedback",
     "Unlimited Boards",
     "Admin Dashborad",
-    "24/7 Support",
+    "24/7 Amazing Support",
   ];
 
   return (
